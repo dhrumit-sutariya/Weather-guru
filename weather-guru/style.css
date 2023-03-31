@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "myFirstFont";
+  src: url("ticking-timebomb-bb.regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-blend-mode: lighten;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  width: 35rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem 3fr;
+  padding: 2rem;
+  color: #ddd;
+  border: 0.03rem solid #ffffff4d;
+  background: #000000d0;
+  border-radius: 1rem;
+}
+
+#search {
+  background: transparent;
+  border-bottom: 0.03rem solid #ddd;
+  color: #ddd;
+  font-family: inherit;
+}
+
+#search:focus {
+  background: transparent;
+}
+
+#search::placeholder {
+  color: #ddd;
+}
+
+.uil-search {
+  cursor: pointer;
+}
+
+.output {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.city {
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main span {
+  font-size: 2rem;
+}
+
+main .weather-icon img {
+  width: 5rem;
+  fill: #ddd;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details {
+  border-bottom: 0.03rem solid #ddd;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.empty,
+.msg {
+  text-align: center;
+}
