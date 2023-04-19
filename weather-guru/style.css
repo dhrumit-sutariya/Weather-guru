@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "Kanit", sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
   background-image: url('https://source.unsplash.com/1600x900/?landscape');
   background-blend-mode: lighten;
   display: flex;
@@ -26,13 +26,13 @@ body {
 .container {
   width: 35rem;
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: 3rem 3fr;
-  padding: 2rem;
+  padding: 1rem;
   color: #ddd;
   border: 0.03rem solid #ffffff4d;
   background: #000000d0;
-  border-radius: 1rem;
+  border-radius: 1.3rem;
+  font-size: 17px;
 }
 
 #search {
@@ -67,7 +67,7 @@ header {
 }
 
 .city {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 main {
