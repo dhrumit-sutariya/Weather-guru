@@ -24,18 +24,18 @@ searchBtn.addEventListener("click", () => {
   <section>
       <div class="details">
           <span>Wind Speed</span>
-          <span>${data.wind.speed}km/h</i></span>
+          <span>${data.wind.speed} km/h</i></span>
       </div>
       <div class="details">
           <span>Pressure</span>
-          <span>${data.main.pressure}atm</span>
+          <span>${data.main.pressure} atm</span>
       </div>
       <div class="details">
           <span>Humidity</span>
-          <span>${data.main.humidity}%</span>
+          <span>${data.main.humidity} %</span>
       </div>
   </section>`;
-        console.log(console.log(data));
+        // console.log(console.log(data));
       })
       .catch(() => {
         output.innerHTML = `<h3 class="msg">City not found</h3>`;
